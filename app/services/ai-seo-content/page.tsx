@@ -10,7 +10,9 @@ export default function AISeOContent() {
   return (
     <PageWrapper>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
+        
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -43,7 +45,7 @@ export default function AISeOContent() {
       </section>
 
       {/* The Search Revolution */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -101,7 +103,7 @@ export default function AISeOContent() {
       </section>
 
       {/* Our Omni-Search Strategy */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -205,7 +207,7 @@ export default function AISeOContent() {
       </section>
 
       {/* Service Components */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -295,7 +297,7 @@ export default function AISeOContent() {
       </section>
 
       {/* Expected Results */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -338,7 +340,7 @@ export default function AISeOContent() {
       </section>
 
       {/* Industry Applications */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -406,7 +408,7 @@ export default function AISeOContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}

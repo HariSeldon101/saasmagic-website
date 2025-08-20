@@ -10,7 +10,8 @@ export default function CustomerJourneyIntelligence() {
   return (
     <PageWrapper>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
         
         <div className="container mx-auto px-6">
           <motion.div
@@ -44,7 +45,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* The Journey Revolution */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -93,7 +94,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -198,7 +199,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* What's Included */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -266,7 +267,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* Expected Outcomes */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -309,7 +310,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -376,7 +377,7 @@ export default function CustomerJourneyIntelligence() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
