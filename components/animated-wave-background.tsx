@@ -23,7 +23,7 @@ export default function AnimatedWaveBackground() {
     resize();
     window.addEventListener("resize", resize);
 
-    // Wave settings from LinkedIn Profile Enhancer
+    // Wave settings from LinkedIn Profile Enhancer with 50% reduced opacity for better readability
     const waves = [
       {
         amplitude: 200,
@@ -31,8 +31,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.015,
         offset: -100,
         colors: [
-          { r: 139, g: 92, b: 246, a: 0.95 }, // primary-purple
-          { r: 109, g: 40, b: 217, a: 0.75 }  // deep-purple
+          { r: 139, g: 92, b: 246, a: 0.475 }, // primary-purple (was 0.95)
+          { r: 109, g: 40, b: 217, a: 0.375 }  // deep-purple (was 0.75)
         ]
       },
       {
@@ -41,8 +41,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.01,
         offset: 0,
         colors: [
-          { r: 109, g: 40, b: 217, a: 0.85 }, // deep-purple
-          { r: 167, g: 139, b: 250, a: 0.65 } // electric-violet
+          { r: 109, g: 40, b: 217, a: 0.425 }, // deep-purple (was 0.85)
+          { r: 167, g: 139, b: 250, a: 0.325 } // electric-violet (was 0.65)
         ]
       },
       {
@@ -51,8 +51,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.018,
         offset: 100,
         colors: [
-          { r: 217, g: 70, b: 239, a: 0.75 }, // accent-magenta
-          { r: 139, g: 92, b: 246, a: 0.55 }  // primary-purple
+          { r: 217, g: 70, b: 239, a: 0.375 }, // accent-magenta (was 0.75)
+          { r: 139, g: 92, b: 246, a: 0.275 }  // primary-purple (was 0.55)
         ]
       }
     ];
@@ -102,11 +102,11 @@ export default function AnimatedWaveBackground() {
       ctx.fillStyle = "#0F0A1F"; // midnight-black
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Add subtle gradient overlay
+      // Add subtle gradient overlay with reduced opacity
       const bgGradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      bgGradient.addColorStop(0, "rgba(26, 15, 46, 0.8)"); // dark-space
-      bgGradient.addColorStop(0.5, "rgba(15, 10, 31, 0.9)"); // midnight-black
-      bgGradient.addColorStop(1, "rgba(109, 40, 217, 0.1)"); // deep-purple
+      bgGradient.addColorStop(0, "rgba(26, 15, 46, 0.4)"); // dark-space (was 0.8)
+      bgGradient.addColorStop(0.5, "rgba(15, 10, 31, 0.45)"); // midnight-black (was 0.9)
+      bgGradient.addColorStop(1, "rgba(109, 40, 217, 0.05)"); // deep-purple (was 0.1)
       ctx.fillStyle = bgGradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
