@@ -18,7 +18,7 @@ export default function HyperPersonalization() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-6xl"
+            className="max-w-6xl mx-auto text-center"
           >
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
               Marketing That Knows Every{" "}
