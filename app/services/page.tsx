@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Target, TrendingUp, Shield, Brain, Zap } from "lucide-react";
+import { ArrowRight, Target, TrendingUp, Shield, Brain, Zap, Rocket } from "lucide-react";
 
 const services = [
   {
@@ -58,6 +58,17 @@ const services = [
       "47% increase in customer lifetime value",
       "34% improvement in conversion rates",
       "71% reduction in cart abandonment",
+    ],
+  },
+  {
+    title: "SaaS Growth Acceleration",
+    description: "Transform your SaaS metrics with AI-powered revenue optimization. Achieve 120%+ net revenue retention, reduce churn by 25-40%, and capture 11-30% additional revenue through strategic optimization.",
+    icon: <Rocket className="text-electric-violet" size={48} />,
+    href: "/services/saas-growth-acceleration",
+    benefits: [
+      "25-40% reduction in customer churn",
+      "120%+ net revenue retention",
+      "11-30% additional revenue captured",
     ],
   },
 ];

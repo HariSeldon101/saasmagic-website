@@ -19,6 +19,7 @@ export function Navigation() {
         { label: "Brand Evolution", href: "/services/brand-evolution" },
         { label: "AI SEO & Content", href: "/services/ai-seo-content" },
         { label: "Hyper-Personalization", href: "/services/hyper-personalization" },
+        { label: "SaaS Growth Acceleration", href: "/services/saas-growth-acceleration" },
       ],
     },
     { label: "Success Stories", href: "/case-studies" },
