@@ -23,67 +23,81 @@ export default function AnimatedWaveBackground() {
     resize();
     window.addEventListener("resize", resize);
 
+    // Wave settings from LinkedIn Profile Enhancer
     const waves = [
       {
-        amplitude: 75, // More random - increased from 50
+        amplitude: 200,
+        wavelength: 0.008,
         frequency: 0.015,
-        speed: 0.0144, // 40% slower (was 0.024)
-        color: "139, 92, 246", // primary-purple
-        opacity: 0.4,
-        yOffset: 0.25,
+        offset: -100,
+        colors: [
+          { r: 139, g: 92, b: 246, a: 0.95 }, // primary-purple
+          { r: 109, g: 40, b: 217, a: 0.75 }  // deep-purple
+        ]
       },
       {
-        amplitude: 45, // More random - increased from 35
+        amplitude: 250,
+        wavelength: 0.006,
+        frequency: 0.01,
+        offset: 0,
+        colors: [
+          { r: 109, g: 40, b: 217, a: 0.85 }, // deep-purple
+          { r: 167, g: 139, b: 250, a: 0.65 } // electric-violet
+        ]
+      },
+      {
+        amplitude: 160,
+        wavelength: 0.01,
         frequency: 0.018,
-        speed: 0.0108, // 40% slower (was 0.018)
-        color: "109, 40, 217", // deep-purple
-        opacity: 0.3,
-        yOffset: 0.35,
-      },
-      {
-        amplitude: 90, // More random - increased from 60
-        frequency: 0.012,
-        speed: 0.018, // 40% slower (was 0.03)
-        color: "167, 139, 250", // electric-violet
-        opacity: 0.25,
-        yOffset: 0.45,
-      },
-      {
-        amplitude: 30, // More random - slightly increased from 25
-        frequency: 0.02,
-        speed: 0.0126, // 40% slower (was 0.021)
-        color: "217, 70, 239", // accent-magenta
-        opacity: 0.2,
-        yOffset: 0.55,
-      },
+        offset: 100,
+        colors: [
+          { r: 217, g: 70, b: 239, a: 0.75 }, // accent-magenta
+          { r: 139, g: 92, b: 246, a: 0.55 }  // primary-purple
+        ]
+      }
     ];
 
-    const drawWave = (wave: typeof waves[0], timeOffset: number) => {
-      ctx.beginPath();
-      ctx.moveTo(0, canvas.height);
+    const drawWave = (wave: typeof waves[0], index: number) => {
+      if (!ctx || !canvas) return;
 
-      for (let x = 0; x <= canvas.width; x++) {
-        const y =
-          canvas.height * wave.yOffset +
-          Math.sin(x * wave.frequency + timeOffset) * wave.amplitude;
-        ctx.lineTo(x, y);
+      const points: { x: number; y: number }[] = [];
+      
+      for (let x = 0; x <= canvas.width; x += 5) {
+        const y = 
+          canvas.height / 2 +
+          wave.offset +
+          wave.amplitude * Math.sin(x * wave.wavelength + time * wave.frequency) +
+          wave.amplitude * 0.5 * Math.sin(x * wave.wavelength * 2 + time * wave.frequency * 0.5) +
+          Math.sin(x * 0.003 + time * 0.01) * 50;
+
+        points.push({ x, y });
       }
 
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, points[0].y);
+      
+      for (let i = 1; i < points.length - 1; i++) {
+        const xc = (points[i].x + points[i + 1].x) / 2;
+        const yc = (points[i].y + points[i + 1].y) / 2;
+        ctx.quadraticCurveTo(points[i].x, points[i].y, xc, yc);
+      }
+      
       ctx.lineTo(canvas.width, canvas.height);
       ctx.lineTo(0, canvas.height);
       ctx.closePath();
 
-      // Create gradient for each wave
-      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, `rgba(${wave.color}, 0)`);
-      gradient.addColorStop(0.5, `rgba(${wave.color}, ${wave.opacity * 0.5})`);
-      gradient.addColorStop(1, `rgba(${wave.color}, ${wave.opacity})`);
+      // Create gradient using wave colors
+      const gradient = ctx.createLinearGradient(0, canvas.height / 2, 0, canvas.height);
+      gradient.addColorStop(0, `rgba(${wave.colors[0].r}, ${wave.colors[0].g}, ${wave.colors[0].b}, ${wave.colors[0].a})`);
+      gradient.addColorStop(1, `rgba(${wave.colors[1].r}, ${wave.colors[1].g}, ${wave.colors[1].b}, ${wave.colors[1].a})`);
       
       ctx.fillStyle = gradient;
       ctx.fill();
     };
 
     const animate = () => {
+      if (!ctx || !canvas) return;
+
       // Clear canvas with dark background
       ctx.fillStyle = "#0F0A1F"; // midnight-black
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -96,12 +110,12 @@ export default function AnimatedWaveBackground() {
       ctx.fillStyle = bgGradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Draw waves
-      waves.forEach((wave) => {
-        drawWave(wave, time * wave.speed);
+      // Draw waves with index
+      waves.forEach((wave, index) => {
+        drawWave(wave, index);
       });
 
-      time += 1;
+      time += 0.5; // Slower time increment for smoother animation
       animationId = requestAnimationFrame(animate);
     };
 
