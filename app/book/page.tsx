@@ -278,7 +278,7 @@ export default function BookPage() {
                 variant="outline"
                 className="border-white/20 text-white hover:bg-white/10"
               >
-                <a href="mailto:hello@amplifymarketing.com">
+                <a href="mailto:stupefy@saasmagic.ai">
                   Email Us Directly
                 </a>
               </Button>
@@ -286,6 +286,6 @@ export default function BookPage() {
           </motion.div>
         </div>
       </section>
-    </PageWrapper>
+    </div>
   );
 }
