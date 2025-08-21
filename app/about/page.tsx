@@ -166,21 +166,21 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {[
               {
-                name: "Sarah Chen",
+                name: "Stu Holmes",
                 role: "CEO & Founder",
                 background: "Former VP Marketing at unicorn SaaS company",
                 expertise: ["Growth Strategy", "B2B Marketing", "Team Leadership"],
                 bio: "15+ years scaling marketing teams from Series A to IPO. Passionate about leveraging AI to unlock human potential in marketing.",
               },
               {
-                name: "Dr. Marcus Rodriguez",
-                role: "Chief AI Officer",
+                name: "Tim Ames",
+                role: "Project Lead",
                 background: "PhD in Machine Learning, ex-Google AI",
                 expertise: ["Machine Learning", "Predictive Analytics", "AI Strategy"],
                 bio: "Former lead scientist on Google's advertising AI team. Dedicated to making AI accessible and practical for marketers.",
               },
               {
-                name: "Jennifer Walsh",
+                name: "Sam Blake",
                 role: "Head of Client Success",
                 background: "Former McKinsey consultant, 12+ years agency experience",
                 expertise: ["Client Strategy", "Process Optimization", "Results Delivery"],
