@@ -42,10 +42,8 @@ export default function BookPage() {
             </span>
           </>
         }
-        subtitle=""
-              Let's discuss how AI can transform your marketing. A relaxed, 15-minute conversation 
-              about your goals and opportunities.
-            </p>
+        subtitle="Let's discuss how SaaS Magic can transform your business. A relaxed, 15-minute conversation about your goals and opportunities."
+      >
             
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
               <div className="flex items-center">
@@ -61,9 +59,7 @@ export default function BookPage() {
                 Book instantly
               </div>
             </div>
-          </motion.div>
-        </div>
-      </section>
+      </HeroSection>
 
       {/* Main Content */}
       <section className="py-20">
