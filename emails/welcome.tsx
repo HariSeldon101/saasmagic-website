@@ -20,19 +20,19 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
   return (
     <Html>
       <Head />
-      <Preview>Welcome to Amplify Marketing - Your AI transformation journey starts here!</Preview>
+      <Preview>Welcome to SaaS Magic - Your SaaS journey starts here!</Preview>
       <Body style={main}>
         <Container style={container}>
           <div style={header}>
-            <Heading style={h1}>Welcome to Amplify Marketing!</Heading>
+            <Heading style={h1}>Welcome to SaaS Magic!</Heading>
           </div>
           
           <Section style={section}>
             <Text style={greeting}>Hi {firstName},</Text>
             
             <Text style={text}>
-              Thank you for reaching out to Amplify Marketing! We're excited to help you transform 
-              your marketing with the power of AI.
+              Thank you for reaching out to SaaS Magic! We're excited to help you transform 
+              your idea into a successful SaaS product.
             </Text>
 
             <Text style={text}>
@@ -50,7 +50,7 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
                 <Text style={cardText}>
                   Discover how leading companies are using AI to achieve 30-50% higher conversion rates.
                 </Text>
-                <Button style={secondaryButton} href="https://amplifymarketing.com/resources">
+                <Button style={secondaryButton} href="https://saasmagic.ai/resources">
                   Download Guide
                 </Button>
               </div>
@@ -60,7 +60,7 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
                 <Text style={cardText}>
                   See how we've helped companies achieve 2,847% average ROI improvement with AI-powered marketing.
                 </Text>
-                <Button style={secondaryButton} href="https://amplifymarketing.com/case-studies">
+                <Button style={secondaryButton} href="https://saasmagic.ai/case-studies">
                   View Case Studies
                 </Button>
               </div>
@@ -70,7 +70,7 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
                 <Text style={cardText}>
                   Explore our comprehensive suite of AI-powered marketing services.
                 </Text>
-                <Button style={secondaryButton} href="https://amplifymarketing.com/services">
+                <Button style={secondaryButton} href="https://saasmagic.ai/services">
                   Learn More
                 </Button>
               </div>
@@ -97,7 +97,7 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
               <Text style={ctaText}>
                 Can't wait? Book a 15-minute intro call right now:
               </Text>
-              <Button style={button} href="https://amplifymarketing.com/book">
+              <Button style={button} href="https://saasmagic.ai/book">
                 Schedule Your Call
               </Button>
             </Section>
@@ -105,21 +105,21 @@ export default function WelcomeEmail({ firstName }: WelcomeEmailProps) {
             <Text style={signature}>
               Looking forward to transforming your marketing together!<br /><br />
               Best regards,<br />
-              The Amplify Marketing Team
+              The SaaS Magic Team
             </Text>
           </Section>
 
           <Section style={footer}>
             <Text style={footerText}>
-              Amplify Marketing - Where Marketing Strategy Meets AI Intelligence
+              SaaS Magic - From Idea to Launch in 8 Weeks or Less
             </Text>
             <Text style={footerLinks}>
-              <Link href="https://amplifymarketing.com">Website</Link> •{' '}
-              <Link href="https://linkedin.com/company/amplify-marketing">LinkedIn</Link> •{' '}
-              <Link href="https://twitter.com/amplifyai">Twitter</Link>
+              <Link href="https://saasmagic.ai">Website</Link> •{' '}
+              <Link href="https://linkedin.com/company/saas-magic">LinkedIn</Link> •{' '}
+              <Link href="https://twitter.com/saasmagic">Twitter</Link>
             </Text>
             <Text style={footerAddress}>
-              © 2025 Amplify Marketing. All rights reserved.
+              © 2025 SaaS Magic. All rights reserved.
             </Text>
           </Section>
         </Container>

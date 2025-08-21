@@ -1,28 +1,29 @@
 import Link from "next/link";
-import { Linkedin, Twitter, Youtube } from "lucide-react";
+import { Linkedin, Twitter, Youtube, ArrowRight } from "lucide-react";
+import { MagicWandIcon } from "@/components/icons/magic-wand";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { label: "Customer Journey Intelligence", href: "/services/customer-journey-intelligence" },
-      { label: "Funnel Transformation", href: "/services/funnel-transformation" },
-      { label: "Brand Evolution", href: "/services/brand-evolution" },
-      { label: "AI SEO & Content", href: "/services/ai-seo-content" },
-      { label: "Hyper-Personalization", href: "/services/hyper-personalization" },
+      { label: "Strategy & Research", href: "/services#strategy" },
+      { label: "Product Development", href: "/services#development" },
+      { label: "Brand & Design", href: "/services#brand" },
+      { label: "Marketing & Growth", href: "/services#growth" },
     ],
     resources: [
+      { label: "SaaS Playbook", href: "/resources/playbook" },
       { label: "Blog", href: "/resources/blog" },
-      { label: "Guides", href: "/resources/guides" },
-      { label: "Case Studies", href: "/case-studies" },
-      { label: "Free Assessment", href: "/get-started" },
+      { label: "Webinars", href: "/resources/webinars" },
+      { label: "Tools", href: "/resources/tools" },
     ],
     company: [
       { label: "About Us", href: "/about" },
+      { label: "How We Work", href: "/#how-it-works" },
+      { label: "Case Studies", href: "/case-studies" },
+      { label: "Careers", href: "/careers" },
       { label: "Contact", href: "/contact" },
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
     ],
   };
 
@@ -32,14 +33,20 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-flex items-center space-x-2 mb-4">
+              <MagicWandIcon className="w-8 h-8 text-primary-purple" />
               <span className="text-2xl font-bold bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Amplify
+                SaaS Magic
               </span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
-              Where Marketing Strategy Meets AI Intelligence. Transform your growth trajectory with intelligence that understands your business.
+              From Idea to Launch in 8 Weeks. One Agency. Complete Journey. Zero Friction.
             </p>
+            <div className="text-gray-400 text-sm mb-6">
+              <a href="mailto:stupefy@saasmagic.ai" className="hover:text-electric-violet transition-colors">
+                stupefy@saasmagic.ai
+              </a>
+            </div>
             <div className="flex space-x-4">
               <Link
                 href="https://linkedin.com"
@@ -54,13 +61,6 @@ export function Footer() {
                 className="text-gray-400 hover:text-electric-violet transition-colors"
               >
                 <Twitter size={20} />
-              </Link>
-              <Link
-                href="https://youtube.com"
-                aria-label="YouTube"
-                className="text-gray-400 hover:text-electric-violet transition-colors"
-              >
-                <Youtube size={20} />
               </Link>
             </div>
           </div>
@@ -117,11 +117,25 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Footer CTA */}
+        <div className="mt-12 py-8 bg-gradient-to-r from-primary-purple/10 to-electric-violet/10 rounded-lg border border-electric-violet/20 text-center">
+          <h3 className="text-xl font-semibold text-white mb-2">
+            Ready to accelerate your SaaS journey?
+          </h3>
+          <Link
+            href="/get-started"
+            className="inline-flex items-center text-electric-violet hover:text-white transition-colors font-semibold"
+          >
+            Get Your Free Roadmap
+            <ArrowRight className="ml-2" size={16} />
+          </Link>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10">
+        <div className="mt-8 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Amplify Marketing. All rights reserved.
+              &copy; {currentYear} SaaS Magic. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0 items-center">
               <Link

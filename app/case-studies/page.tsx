@@ -4,44 +4,34 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, TrendingUp, Brain, Target, Users, BarChart3, Award, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { HeroSection } from "@/components/hero-section";
 
 export default function CaseStudies() {
   return (
     <div className="relative">
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
-        
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-              Client{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Success Stories
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Discover how forward-thinking companies have transformed their marketing 
-              with AI-amplified strategies and achieved extraordinary growth.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
-            >
-              <Link href="/get-started">
-                Start Your Transformation
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero Section with Animated Waves */}
+      <HeroSection
+        title={
+          <>
+            Real Results from{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              Ambitious SaaS Companies
+            </span>
+          </>
+        }
+        subtitle="See how we've helped companies go from idea to launch, from launch to scale, and from scale to exit."
+      >
+        <Button
+          asChild
+          size="lg"
+          className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+        >
+          <Link href="/get-started">
+            Start Your Success Story
+            <ArrowRight className="ml-2" size={20} />
+          </Link>
+        </Button>
+      </HeroSection>
 
       {/* Success Metrics Overview */}
       <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">

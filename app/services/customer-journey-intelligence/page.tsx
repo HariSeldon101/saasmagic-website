@@ -4,45 +4,34 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, TrendingUp, Brain, Target, Users, BarChart3, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import PageWrapper from "@/components/page-wrapper";
+import { PageHero } from "@/components/page-hero";
 
 export default function CustomerJourneyIntelligence() {
   return (
-    <PageWrapper>
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
-        
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-6xl mx-auto text-center"
-          >
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-              See the Future of Every{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Customer Journey
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Predict, personalize, and perfect every interaction with AI-powered journey intelligence 
-              that transforms how you understand and engage customers.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
-            >
-              <Link href="/get-started">
-                Map Your Revenue Journey
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
+    <div className="relative">
+      {/* Hero Section with Animated Background */}
+      <PageHero
+        title={
+          <>
+            See the Future of Every{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              Customer Journey
+            </span>
+          </>
+        }
+        subtitle="Predict, personalize, and perfect every interaction with AI-powered journey intelligence that transforms how you understand and engage customers."
+      >
+        <Button
+          asChild
+          size="lg"
+          className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+        >
+          <Link href="/get-started">
+            Map Your Revenue Journey
+            <ArrowRight className="ml-2" size={20} />
+          </Link>
+        </Button>
+      </PageHero>
 
       {/* The Journey Revolution */}
       <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
@@ -416,6 +405,6 @@ export default function CustomerJourneyIntelligence() {
           </motion.div>
         </div>
       </section>
-    </PageWrapper>
+    </div>
   );
 }

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Target, TrendingUp, Shield, Brain, Zap, Rocket } from "lucide-react";
+import { HeroSection } from "@/components/hero-section";
 
 const services = [
   {
@@ -76,30 +77,18 @@ const services = [
 export default function Services() {
   return (
     <div className="relative">
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
-        
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-              AI-Amplified Marketing Services That{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Drive Real Growth
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Each service combines deep strategic thinking with advanced AI capabilities to deliver 
-              transformational results. Choose the perfect solution for your growth goals.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero Section with Animated Waves */}
+      <HeroSection
+        title={
+          <>
+            AI-Amplified Marketing Services That{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              Drive Real Growth
+            </span>
+          </>
+        }
+        subtitle="Each service combines deep strategic thinking with advanced AI capabilities to deliver transformational results. Choose the perfect solution for your growth goals."
+      />
 
       {/* Services Grid */}
       <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">

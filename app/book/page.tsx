@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import PageWrapper from "@/components/page-wrapper";
 import { Calendar, Clock, Video, CheckCircle, ArrowRight, MessageSquare, Target, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { HeroSection } from "@/components/hero-section";
 
 // You'll need to replace this with your actual Calendly URL
 const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/your-account/15min";
@@ -31,23 +31,18 @@ export default function BookPage() {
   }, []);
 
   return (
-    <PageWrapper>
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
-        <div className="container mx-auto px-6 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-              Book Your{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Free AI Consultation
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+    <div className="relative">
+      {/* Hero Section with Animated Waves */}
+      <HeroSection
+        title={
+          <>
+            Book Your{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              Free SaaS Roadmap Call
+            </span>
+          </>
+        }
+        subtitle=""
               Let's discuss how AI can transform your marketing. A relaxed, 15-minute conversation 
               about your goals and opportunities.
             </p>

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 
-export function AnimatedBackground() {
+export function AnimatedWaves() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -19,33 +19,33 @@ export function AnimatedBackground() {
 
     const waves = [
       {
-        amplitude: 200,
+        amplitude: 100,
         wavelength: 0.008,
         frequency: 0.015,
         offset: -100,
         colors: [
-          { r: 147, g: 51, b: 234, a: 0.95 },
-          { r: 59, g: 130, b: 246, a: 0.75 }
+          { r: 147, g: 51, b: 234, a: 0.15 },
+          { r: 59, g: 130, b: 246, a: 0.1 }
         ]
       },
       {
-        amplitude: 250,
+        amplitude: 120,
         wavelength: 0.006,
         frequency: 0.01,
         offset: 0,
         colors: [
-          { r: 59, g: 130, b: 246, a: 0.85 },
-          { r: 147, g: 51, b: 234, a: 0.65 }
+          { r: 59, g: 130, b: 246, a: 0.12 },
+          { r: 147, g: 51, b: 234, a: 0.08 }
         ]
       },
       {
-        amplitude: 160,
+        amplitude: 80,
         wavelength: 0.01,
         frequency: 0.018,
         offset: 100,
         colors: [
-          { r: 236, g: 72, b: 153, a: 0.75 },
-          { r: 99, g: 102, b: 241, a: 0.55 }
+          { r: 236, g: 72, b: 153, a: 0.1 },
+          { r: 99, g: 102, b: 241, a: 0.06 }
         ]
       }
     ]
@@ -86,19 +86,15 @@ export function AnimatedBackground() {
 
       ctx.fillStyle = gradient
       ctx.fill()
-
-      ctx.shadowBlur = 40
-      ctx.shadowColor = `rgba(${wave.colors[0].r}, ${wave.colors[0].g}, ${wave.colors[0].b}, 0.5)`
-      ctx.fill()
-      ctx.shadowBlur = 0
     }
 
     function animate() {
       if (!ctx || !canvas) return
 
-      ctx.fillStyle = '#000000'
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      // Clear canvas with transparent background
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
+      // Draw waves with additive blending
       ctx.globalCompositeOperation = 'screen'
 
       waves.forEach((wave, index) => {
@@ -123,18 +119,10 @@ export function AnimatedBackground() {
   }, [])
 
   return (
-    <>
-      <div className="fixed inset-0 bg-black" />
-      <canvas
-        ref={canvasRef}
-        className="fixed inset-0"
-        style={{ zIndex: 1 }}
-      />
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 2 }}>
-        <div className="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-purple-600/20 via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-purple-600/10" />
-      </div>
-    </>
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full"
+      style={{ opacity: 0.6 }}
+    />
   )
 }

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText, Video, Download, TrendingUp, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { HeroSection } from "@/components/hero-section";
 
 export default function ResourcesPage() {
   const featuredResources = [
@@ -79,29 +80,18 @@ export default function ResourcesPage() {
 
   return (
     <div className="relative">
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-midnight-black via-primary-purple/10 to-dark-space -z-10" />
-        
-        <div className="container mx-auto px-6 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-              Resources to{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                Amplify Your Marketing
-              </span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Guides, templates, and insights to help you leverage AI for unprecedented marketing growth.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero Section with Animated Waves */}
+      <HeroSection
+        title={
+          <>
+            Resources to{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              Build & Scale Your SaaS
+            </span>
+          </>
+        }
+        subtitle="Guides, templates, and insights to help you leverage AI for unprecedented SaaS growth."
+      />
 
       {/* Featured Resources */}
       <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">

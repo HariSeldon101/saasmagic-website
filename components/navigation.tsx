@@ -5,25 +5,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { MagicWandIcon } from "@/components/icons/magic-wand";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    {
-      label: "Services",
-      href: "/services",
-      subItems: [
-        { label: "Customer Journey Intelligence", href: "/services/customer-journey-intelligence" },
-        { label: "Funnel Transformation", href: "/services/funnel-transformation" },
-        { label: "Brand Evolution", href: "/services/brand-evolution" },
-        { label: "AI SEO & Content", href: "/services/ai-seo-content" },
-        { label: "Hyper-Personalization", href: "/services/hyper-personalization" },
-        { label: "SaaS Growth Acceleration", href: "/services/saas-growth-acceleration" },
-      ],
-    },
-    { label: "Success Stories", href: "/case-studies" },
-    { label: "Resources", href: "/resources" },
+    { label: "How We Work", href: "/#how-it-works" },
     { label: "About", href: "/about" },
   ];
 
@@ -33,8 +21,9 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
+            <MagicWandIcon className="w-8 h-8 text-primary-purple" />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-              Amplify
+              SaaS Magic
             </span>
           </Link>
 
@@ -69,15 +58,8 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <Button
-              asChild
-              variant="outline"
-              className="border-electric-violet/50 text-electric-violet hover:bg-electric-violet/10 hover:border-electric-violet font-semibold px-6 py-2 rounded-lg transition-all duration-300"
-            >
-              <Link href="/book">Book a Call</Link>
-            </Button>
+          {/* CTA Button */}
+          <div className="hidden lg:flex items-center">
             <Button
               asChild
               className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
@@ -132,16 +114,7 @@ export function Navigation() {
                   )}
                 </div>
               ))}
-              <div className="pt-4 pb-2 space-y-3">
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full border-electric-violet/50 text-electric-violet hover:bg-electric-violet/10 hover:border-electric-violet font-semibold px-6 py-2 rounded-lg transition-all duration-300"
-                >
-                  <Link href="/book" onClick={() => setIsOpen(false)}>
-                    Book a Call
-                  </Link>
-                </Button>
+              <div className="pt-4 pb-2">
                 <Button
                   asChild
                   className="w-full bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300"

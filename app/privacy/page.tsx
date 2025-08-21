@@ -213,8 +213,8 @@ export default function Privacy() {
                   </ul>
                   <p className="mt-4">
                     To exercise these rights, contact us at{" "}
-                    <a href="mailto:privacy@amplifysales.ai" className="text-electric-violet hover:underline">
-                      privacy@amplifysales.ai
+                    <a href="mailto:stupefy@saasmagic.ai" className="text-electric-violet hover:underline">
+                      stupefy@saasmagic.ai
                     </a>
                   </p>
                 </div>
@@ -308,13 +308,13 @@ export default function Privacy() {
                 </h2>
                 <div className="space-y-2 text-gray-300">
                   <p>If you have questions about this Privacy Policy or our privacy practices:</p>
-                  <p><strong>Email:</strong> <a href="mailto:privacy@amplifysales.ai" className="text-electric-violet hover:underline">privacy@amplifysales.ai</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:stupefy@saasmagic.ai" className="text-electric-violet hover:underline">stupefy@saasmagic.ai</a></p>
                   <p><strong>Mail:</strong></p>
                   <div className="ml-4">
-                    <p>Amplify Marketing LLC</p>
+                    <p>SaaS Magic</p>
                     <p>Privacy Officer</p>
-                    <p>123 Innovation Drive</p>
-                    <p>San Francisco, CA 94105</p>
+                    <p>London, UK</p>
+                    <p>+44 7979 651110</p>
                   </div>
                   <p className="pt-2">
                     <strong>Response Time:</strong> We respond to privacy inquiries within 30 days.

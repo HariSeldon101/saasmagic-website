@@ -76,7 +76,7 @@ export async function sendContactInquiry(formData: {
   // Send confirmation to user
   await sendEmail({
     to: formData.email,
-    subject: 'Thank you for contacting Amplify Marketing',
+    subject: 'Thank you for contacting SaaS Magic',
     text: `
       Hi ${formData.firstName},
       

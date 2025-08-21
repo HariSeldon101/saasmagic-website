@@ -397,13 +397,13 @@ export default function Terms() {
                 </h2>
                 <div className="space-y-2 text-gray-300">
                   <p>If you have questions about these Terms of Service:</p>
-                  <p><strong>Email:</strong> <a href="mailto:legal@amplifysales.ai" className="text-electric-violet hover:underline">legal@amplifysales.ai</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:stupefy@saasmagic.ai" className="text-electric-violet hover:underline">stupefy@saasmagic.ai</a></p>
                   <p><strong>Mail:</strong></p>
                   <div className="ml-4">
-                    <p>Amplify Marketing LLC</p>
+                    <p>SaaS Magic</p>
                     <p>Legal Department</p>
-                    <p>123 Innovation Drive</p>
-                    <p>San Francisco, CA 94105</p>
+                    <p>London, UK</p>
+                    <p>+44 7979 651110</p>
                   </div>
                   <p className="pt-2">
                     <strong>Response Time:</strong> We respond to legal inquiries within 5 business days.

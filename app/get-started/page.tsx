@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { HeroSection } from "@/components/hero-section";
 
 export default function GetStarted() {
   const [formData, setFormData] = useState({
@@ -76,10 +77,10 @@ export default function GetStarted() {
             <h1 className="text-4xl font-bold text-white mb-4">Thank You!</h1>
             <p className="text-xl text-gray-300 mb-6">
               We've received your information and will be in touch within 24 hours to schedule your 
-              complimentary AI Marketing Readiness Assessment.
+              complimentary SaaS Strategy Assessment.
             </p>
             <p className="text-gray-400 mb-8">
-              In the meantime, you'll receive an email with our exclusive "AI Marketing Transformation Guide" 
+              In the meantime, you'll receive an email with our exclusive "SaaS Success Blueprint" 
               with insights on how companies are successfully implementing AI in their marketing strategies.
             </p>
             <Button
@@ -97,31 +98,18 @@ export default function GetStarted() {
 
   return (
     <div className="relative">
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
-        
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-              Start Your{" "}
-              <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
-                AI Marketing
-              </span>
-              {" "}Transformation
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Schedule your complimentary AI Marketing Readiness Assessment and discover 
-              how AI can amplify your marketing results in the next 90 days.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero Section with Animated Waves */}
+      <HeroSection
+        title={
+          <>
+            Get Your Free{" "}
+            <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
+              SaaS Roadmap
+            </span>
+          </>
+        }
+        subtitle="Schedule your complimentary strategy session and discover how we can take you from idea to launch in 8 weeks."
+      />
 
       {/* What You'll Get Section */}
       <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
@@ -164,13 +152,13 @@ export default function GetStarted() {
               {
                 icon: <BarChart3 className="text-electric-violet" size={32} />,
                 title: "ROI Projection Model",
-                description: "Data-driven projections showing expected returns from AI marketing implementation",
+                description: "Data-driven projections showing expected returns from your SaaS implementation",
                 duration: "Conservative estimates",
               },
               {
                 icon: <Users className="text-electric-violet" size={32} />,
                 title: "Competitive Intelligence",
-                description: "Analysis of how your competitors are using (or missing) AI marketing opportunities",
+                description: "Analysis of how your competitors are using (or missing) SaaS opportunities",
                 duration: "Market positioning insights",
               },
               {
@@ -216,7 +204,7 @@ export default function GetStarted() {
                     Schedule Your Strategy Session
                   </h2>
                   <p className="text-xl text-gray-300">
-                    Complete the form to book your complimentary AI Marketing Readiness Assessment. 
+                    Complete the form to book your complimentary SaaS Strategy Assessment. 
                     We'll respond within 24 hours to schedule your session.
                   </p>
                 </div>
@@ -241,13 +229,13 @@ export default function GetStarted() {
                       {
                         step: "3",
                         title: "Strategy Session",
-                        description: "60-minute deep dive into your AI marketing opportunities",
+                        description: "60-minute deep dive into your SaaS opportunities",
                         icon: <Brain className="text-electric-violet" size={24} />,
                       },
                       {
                         step: "4",
                         title: "Custom Blueprint",
-                        description: "Receive your personalized AI marketing transformation plan",
+                        description: "Receive your personalized SaaS transformation roadmap",
                         icon: <Target className="text-electric-violet" size={24} />,
                       },
                     ].map((step, index) => (
@@ -282,15 +270,15 @@ export default function GetStarted() {
                   <div className="space-y-3">
                     <div className="flex items-center text-gray-300">
                       <Phone className="text-electric-violet mr-3" size={18} />
-                      <span>(555) 123-4567</span>
+                      <span>+44 7979 651110</span>
                     </div>
                     <div className="flex items-center text-gray-300">
                       <Mail className="text-electric-violet mr-3" size={18} />
-                      <span>hello@amplifysales.ai</span>
+                      <span>stupefy@saasmagic.ai</span>
                     </div>
                   </div>
                   <p className="text-sm text-gray-400 mt-3">
-                    Our team is available Monday-Friday, 9 AM - 6 PM EST
+                    Our team is available Monday-Friday, 9 AM - 6 PM GMT
                   </p>
                 </div>
               </motion.div>
@@ -473,7 +461,7 @@ export default function GetStarted() {
                       "Submitting..."
                     ) : (
                       <>
-                        Schedule My AI Assessment
+                        Schedule My SaaS Assessment
                         <ArrowRight className="ml-2" size={20} />
                       </>
                     )}

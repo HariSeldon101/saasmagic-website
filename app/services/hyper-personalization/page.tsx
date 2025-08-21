@@ -10,7 +10,7 @@ export default function HyperPersonalization() {
   return (
     <PageWrapper>
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/20 -z-10" />
         
         <div className="container mx-auto px-6">

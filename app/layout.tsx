@@ -16,21 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amplify Marketing - AI-Powered Marketing Transformation",
-  description: "Where Marketing Strategy Meets AI Intelligence. Transform your growth trajectory with AI-powered customer journey intelligence, funnel optimization, and hyper-personalization.",
-  keywords: "AI marketing, marketing automation, customer journey, funnel optimization, personalization, SEO, content marketing",
-  authors: [{ name: "Amplify Marketing" }],
+  title: "SaaS Magic - From Idea to Launch in 8 Weeks",
+  description: "One Agency. Complete Journey. Zero Friction. SaaS Magic is your single partner for strategy, development, branding, and launch – powered by AI to deliver 40% faster.",
+  keywords: "SaaS development, AI development, SaaS agency, product development, SaaS strategy, startup development, MVP development, SaaS launch",
+  authors: [{ name: "SaaS Magic" }],
   openGraph: {
-    title: "Amplify Marketing - AI-Powered Marketing Transformation",
-    description: "Transform your marketing with AI. Achieve 30-50% higher conversions through intelligent optimization and personalization.",
+    title: "SaaS Magic - From Idea to Launch in 8 Weeks",
+    description: "Stop juggling multiple agencies. One dedicated team for everything. Launch 40% faster with AI-powered development.",
     type: "website",
     locale: "en_US",
-    siteName: "Amplify Marketing",
+    siteName: "SaaS Magic",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amplify Marketing - AI-Powered Marketing Transformation",
-    description: "Transform your marketing with AI. Achieve 30-50% higher conversions through intelligent optimization.",
+    title: "SaaS Magic - From Idea to Launch in 8 Weeks",
+    description: "Stop juggling multiple agencies. One dedicated team for everything. Launch 40% faster with AI-powered development.",
   },
 };
 
