@@ -192,14 +192,14 @@ export default function About() {
             className="max-w-5xl mx-auto"
           >
             <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-electric-violet/30">
-              <div className="text-center">
+              <div className="text-center py-8">
                 <img 
                   src="/prince2-logo.svg" 
                   alt="Prince2 Certified" 
                   className="w-full max-w-[300px] mx-auto brightness-200"
                 />
               </div>
-              <div className="space-y-6 mt-2">
+              <div className="space-y-6 mt-6 mb-4">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white text-center">
                   Prince2 Certified Excellence
                 </h2>

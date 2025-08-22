@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent hyphenated words from breaking across lines */
+@layer utilities {
+  .keep-together {
+    white-space: nowrap;
+  }
+}
+
 :root {
   --radius: 0.5rem;
   --background: 0 0% 100%;

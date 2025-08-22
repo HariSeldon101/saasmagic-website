@@ -67,7 +67,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-              The Multi-Agency Nightmare Is Real
+              The <span className="whitespace-nowrap">Multi-Agency</span> Nightmare Is Real
             </h2>
             <p className="text-xl text-gray-300">
               Building a SaaS product shouldn't feel like herding cats
@@ -128,7 +128,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start text-gray-300">
                   <span className="text-green-400 mr-3 mt-1">✅</span>
-                  8-week idea-to-launch timeline
+                  <span className="whitespace-nowrap">8-week</span> <span className="whitespace-nowrap">idea-to-launch</span> timeline
                 </li>
                 <li className="flex items-start text-gray-300">
                   <span className="text-green-400 mr-3 mt-1">✅</span>
@@ -200,7 +200,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                      <span className="text-gray-300">Product-market fit validation</span>
+                      <span className="text-gray-300"><span className="whitespace-nowrap">Product-market</span> fit validation</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-2 mt-1 flex-shrink-0" size={16} />
@@ -208,7 +208,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                      <span className="text-gray-300">Go-to-market strategy</span>
+                      <span className="text-gray-300"><span className="whitespace-nowrap">Go-to-market</span> strategy</span>
                     </div>
                   </div>
                 </div>
@@ -239,7 +239,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                      <span className="text-gray-300">Full-stack development with AI acceleration</span>
+                      <span className="text-gray-300"><span className="whitespace-nowrap">Full-stack</span> development with AI acceleration</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-2 mt-1 flex-shrink-0" size={16} />
@@ -342,7 +342,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-primary-purple to-electric-violet rounded-lg p-3 inline-block mb-4">
                 <Rocket className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">AI-Powered Speed</h3>
+              <h3 className="text-2xl font-bold text-white mb-4"><span className="whitespace-nowrap">AI-Powered</span> Speed</h3>
               <p className="text-gray-300">
                 We use cutting-edge AI tools and specialized development platforms to deliver in weeks what traditionally takes months. Every line of code, every design, and every piece of content is accelerated by AI while maintaining human creativity and quality.
               </p>
