@@ -441,7 +441,7 @@ export default function GetStarted() {
                       value={formData.message}
                       onChange={(e) => handleInputChange("message", e.target.value)}
                       className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 min-h-[100px]"
-                      placeholder="Tell us more about your goals, team, or any specific questions you have..."
+                      placeholder="Tell us more about your SaaS vision, target users, or any specific features you're planning..."
                     />
                   </div>
 
