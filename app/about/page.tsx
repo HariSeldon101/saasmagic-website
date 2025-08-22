@@ -192,22 +192,21 @@ export default function About() {
             className="max-w-5xl mx-auto"
           >
             <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-electric-violet/30">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-                <div className="lg:col-span-1">
-                  <img 
-                    src="/prince2-logo.svg" 
-                    alt="Prince2 Certified" 
-                    className="w-full max-w-[200px] mx-auto opacity-90"
-                  />
-                </div>
-                <div className="lg:col-span-2 space-y-4">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-white">
-                    Prince2 Certified Excellence
-                  </h2>
-                  <p className="text-lg text-gray-300">
-                    All our project managers are qualified Prince2 practitioners, bringing world-class project management methodology to every client engagement.
-                  </p>
-                  <div className="space-y-3">
+              <div className="text-center mb-8">
+                <img 
+                  src="/prince2-logo.svg" 
+                  alt="Prince2 Certified" 
+                  className="w-full max-w-[400px] mx-auto brightness-150"
+                />
+              </div>
+              <div className="space-y-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white text-center">
+                  Prince2 Certified Excellence
+                </h2>
+                <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto">
+                  All our project managers are qualified Prince2 practitioners, bringing world-class project management methodology to every client engagement.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
                       <div>
@@ -236,7 +235,6 @@ export default function About() {
                         <p className="text-gray-400 text-sm">Structured reporting and defined roles mean you always know exactly where your project stands.</p>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
