@@ -102,9 +102,14 @@ export default function WebinarsPage() {
                     </ul>
                   </div>
                   
-                  <Button className="w-full bg-gradient-to-r from-primary-blue to-deep-blue hover:from-deep-blue hover:to-primary-blue text-white">
-                    <Bell className="mr-2" size={16} />
-                    Register Now - Free
+                  <Button 
+                    asChild
+                    className="w-full bg-gradient-to-r from-primary-blue to-deep-blue hover:from-deep-blue hover:to-primary-blue text-white"
+                  >
+                    <Link href="/todo">
+                      <Bell className="mr-2" size={16} />
+                      Register Now - Free
+                    </Link>
                   </Button>
                 </motion.div>
               ))}

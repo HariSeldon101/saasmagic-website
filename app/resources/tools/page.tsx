@@ -89,9 +89,12 @@ export default function ToolsPage() {
                 <p className="text-gray-400 mb-6">{tool.description}</p>
                 
                 <Button
+                  asChild
                   className="w-full bg-gradient-to-r from-primary-blue/80 to-deep-blue/80 hover:from-primary-blue hover:to-deep-blue text-white group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all"
                 >
-                  {tool.action}
+                  <Link href="/todo">
+                    {tool.action}
+                  </Link>
                 </Button>
               </motion.div>
             ))}
@@ -137,10 +140,13 @@ export default function ToolsPage() {
                         </div>
                       </div>
                       <Button
+                        asChild
                         variant="ghost"
                         className="text-electric-sky hover:text-white"
                       >
-                        Download
+                        <Link href="/todo">
+                          Download
+                        </Link>
                       </Button>
                     </div>
                   ))}
@@ -148,11 +154,14 @@ export default function ToolsPage() {
                 
                 <div className="mt-8 text-center">
                   <Button
+                    asChild
                     size="lg"
                     className="bg-gradient-to-r from-primary-blue to-deep-blue hover:from-deep-blue hover:to-primary-blue text-white"
                   >
-                    <Download className="mr-2" size={20} />
-                    Download All Templates (ZIP)
+                    <Link href="/todo">
+                      <Download className="mr-2" size={20} />
+                      Download All Templates (ZIP)
+                    </Link>
                   </Button>
                   <p className="text-gray-500 text-sm mt-3">
                     No email required • Instant download
