@@ -70,7 +70,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto">
             {[
               {
                 icon: <Rocket className="text-electric-violet" size={32} />,
@@ -191,8 +191,8 @@ export default function About() {
             viewport={{ once: true }}
             className="max-w-5xl mx-auto"
           >
-            <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-electric-violet/30">
-              <div className="text-center mb-8">
+            <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-electric-violet/30">
+              <div className="text-center mb-4">
                 <img 
                   src="/prince2-logo.svg" 
                   alt="Prince2 Certified" 
@@ -206,7 +206,7 @@ export default function About() {
                 <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto">
                   All our project managers are qualified Prince2 practitioners, bringing world-class project management methodology to every client engagement.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
                       <div>
