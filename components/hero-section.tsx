@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { AnimatedWaves } from "./animated-waves";
 
 interface HeroSectionProps {
   title?: ReactNode;
@@ -20,15 +19,13 @@ export function HeroSection({
   tagline, 
   children, 
   className = "",
-  minHeight = "min-h-[70vh]",
+  minHeight = "",
   centerContent = true
 }: HeroSectionProps) {
   return (
-    <section className={`relative ${minHeight} flex items-center overflow-hidden pt-20 ${className}`}>
-      {/* Background gradient with animated waves - used by ALL pages */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-space via-midnight-black to-deep-purple/40 -z-10">
-        <AnimatedWaves />
-      </div>
+    <section className={`relative flex items-center overflow-hidden py-24 lg:py-32 ${className}`}>
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-space/50 via-midnight-black/30 to-deep-purple/20 -z-10" />
       
       {/* Content Container */}
       <div className="container mx-auto px-6 relative z-10">

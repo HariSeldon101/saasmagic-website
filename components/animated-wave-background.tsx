@@ -130,9 +130,10 @@ export default function AnimatedWaveBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 -z-10"
+      className="fixed inset-0 -z-20 pointer-events-none"
       style={{ 
         background: "linear-gradient(to bottom, #0F0A1F, #1A0F2E)",
+        willChange: "transform",
       }}
     />
   );
