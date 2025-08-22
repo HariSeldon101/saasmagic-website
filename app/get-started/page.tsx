@@ -163,9 +163,9 @@ export default function GetStarted() {
               },
               {
                 icon: <Clock className="text-electric-violet" size={32} />,
-                title: "Investment Breakdown",
-                description: "Transparent pricing with fixed phases, clear deliverables, and measurable ROI targets",
-                duration: "No surprises, no scope creep",
+                title: "Prince2 Project Excellence",
+                description: "All projects managed by Prince2 certified practitioners - ensuring predictable delivery, controlled risks, and quality outcomes",
+                duration: "World-class methodology",
               },
             ].map((benefit, index) => (
               <motion.div

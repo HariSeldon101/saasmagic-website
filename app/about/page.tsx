@@ -181,8 +181,71 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Approach */}
+      {/* Prince2 Certification Section */}
       <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-electric-violet/30">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="lg:col-span-1">
+                  <img 
+                    src="/prince2-logo.svg" 
+                    alt="Prince2 Certified" 
+                    className="w-full max-w-[200px] mx-auto opacity-90"
+                  />
+                </div>
+                <div className="lg:col-span-2 space-y-4">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                    Prince2 Certified Excellence
+                  </h2>
+                  <p className="text-lg text-gray-300">
+                    All our project managers are qualified Prince2 practitioners, bringing world-class project management methodology to every client engagement.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <h4 className="text-white font-semibold">Predictable Delivery</h4>
+                        <p className="text-gray-400 text-sm">Fixed milestones, clear stages, and controlled progress ensure your project stays on track and on budget.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <h4 className="text-white font-semibold">Risk Management</h4>
+                        <p className="text-gray-400 text-sm">Proactive identification and mitigation of risks before they become issues, protecting your investment.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <h4 className="text-white font-semibold">Quality Assurance</h4>
+                        <p className="text-gray-400 text-sm">Built-in quality checks at every stage ensure deliverables meet the highest standards.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <h4 className="text-white font-semibold">Clear Communication</h4>
+                        <p className="text-gray-400 text-sm">Structured reporting and defined roles mean you always know exactly where your project stands.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Approach */}
+      <section className="py-20 bg-gradient-to-b from-midnight-black to-dark-space">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
