@@ -23,7 +23,7 @@ export default function AnimatedWaveBackground() {
     resize();
     window.addEventListener("resize", resize);
 
-    // Wave settings from LinkedIn Profile Enhancer
+    // Wave settings with Blue Theme
     const waves = [
       {
         amplitude: 200,
@@ -31,8 +31,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.015,
         offset: -100,
         colors: [
-          { r: 139, g: 92, b: 246, a: 0.475 }, // primary-purple
-          { r: 109, g: 40, b: 217, a: 0.375 }   // deep-purple
+          { r: 37, g: 99, b: 235, a: 0.475 },   // primary-blue (#2563EB)
+          { r: 29, g: 78, b: 216, a: 0.375 }    // deep-blue (#1D4ED8)
         ]
       },
       {
@@ -41,8 +41,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.01,
         offset: 0,
         colors: [
-          { r: 109, g: 40, b: 217, a: 0.425 }, // deep-purple
-          { r: 167, g: 139, b: 250, a: 0.325 } // electric-violet
+          { r: 29, g: 78, b: 216, a: 0.425 },   // deep-blue (#1D4ED8)
+          { r: 96, g: 165, b: 250, a: 0.325 }   // electric-sky (#60A5FA)
         ]
       },
       {
@@ -51,8 +51,8 @@ export default function AnimatedWaveBackground() {
         frequency: 0.018,
         offset: 100,
         colors: [
-          { r: 217, g: 70, b: 239, a: 0.375 },  // accent-magenta
-          { r: 139, g: 92, b: 246, a: 0.275 }  // primary-purple
+          { r: 79, g: 70, b: 229, a: 0.375 },   // accent-indigo (#4F46E5)
+          { r: 37, g: 99, b: 235, a: 0.275 }    // primary-blue (#2563EB)
         ]
       }
     ];
@@ -99,14 +99,14 @@ export default function AnimatedWaveBackground() {
       if (!ctx || !canvas) return;
 
       // Clear canvas with dark background
-      ctx.fillStyle = "#0F0A1F"; // midnight-black
+      ctx.fillStyle = "#0F172A"; // midnight-black (new blue-tinted)
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Add subtle gradient overlay without purple
+      // Add subtle gradient overlay with blue tones
       const bgGradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      bgGradient.addColorStop(0, "rgba(15, 10, 31, 0.3)"); // midnight-black 
-      bgGradient.addColorStop(0.5, "rgba(15, 10, 31, 0.35)"); // midnight-black
-      bgGradient.addColorStop(1, "rgba(15, 10, 31, 0.4)"); // midnight-black darker
+      bgGradient.addColorStop(0, "rgba(15, 23, 42, 0.3)");  // midnight-black 
+      bgGradient.addColorStop(0.5, "rgba(15, 23, 42, 0.35)"); // midnight-black
+      bgGradient.addColorStop(1, "rgba(30, 41, 59, 0.4)");  // dark-space
       ctx.fillStyle = bgGradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -132,7 +132,7 @@ export default function AnimatedWaveBackground() {
       ref={canvasRef}
       className="fixed inset-0 -z-20 pointer-events-none"
       style={{ 
-        background: "linear-gradient(to bottom, #0F0A1F, #0F0A1F)",
+        background: "linear-gradient(to bottom, #0F172A, #1E293B)",
         transform: "translateZ(0)",
         backfaceVisibility: "hidden",
       }}

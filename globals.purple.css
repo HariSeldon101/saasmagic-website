@@ -1,3 +1,11 @@
+/**
+ * SaaS Magic Purple Theme - Global CSS Backup
+ * Created: 2024-12-22
+ * 
+ * This file preserves the original purple theme CSS variables and styles.
+ * To restore: Replace the contents of app/globals.css with this file.
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,19 +25,19 @@
   --card-foreground: 249 20% 14%;
   --popover: 0 0% 100%;
   --popover-foreground: 249 20% 14%;
-  --primary: 217 91% 60%;          /* Blue primary (was purple 262) */
+  --primary: 262 83% 58%;              /* Purple primary */
   --primary-foreground: 0 0% 100%;
-  --secondary: 231 91% 63%;        /* Indigo secondary */
-  --secondary-foreground: 0 0% 100%;
-  --muted: 213 27% 84%;
-  --muted-foreground: 215 16% 47%;
-  --accent: 213 94% 68%;           /* Sky blue accent */
-  --accent-foreground: 0 0% 100%;
+  --secondary: 251 91% 95%;            /* Light purple */
+  --secondary-foreground: 262 83% 58%; /* Purple */
+  --muted: 251 91% 95%;
+  --muted-foreground: 249 10% 40%;
+  --accent: 251 91% 95%;
+  --accent-foreground: 262 83% 58%;    /* Purple */
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
-  --ring: 217 91% 60%;              /* Blue ring (was purple) */
+  --border: 249 20% 90%;
+  --input: 249 20% 90%;
+  --ring: 262 83% 58%;                 /* Purple ring */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -52,19 +60,19 @@
   --card-foreground: 251 91% 95%;
   --popover: 249 50% 10%;
   --popover-foreground: 251 91% 95%;
-  --primary: 217 91% 60%;          /* Blue primary (was purple 262) */
+  --primary: 262 83% 58%;              /* Purple primary */
   --primary-foreground: 0 0% 100%;
-  --secondary: 231 91% 63%;        /* Indigo secondary */
-  --secondary-foreground: 0 0% 100%;
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
-  --accent: 213 94% 68%;           /* Sky blue accent */
-  --accent-foreground: 0 0% 100%;
+  --secondary: 249 50% 15%;
+  --secondary-foreground: 251 91% 95%;
+  --muted: 249 50% 15%;
+  --muted-foreground: 249 10% 60%;
+  --accent: 249 50% 15%;
+  --accent-foreground: 251 91% 95%;
   --destructive: 0 62% 50%;
   --destructive-foreground: 0 0% 100%;
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
-  --ring: 217 91% 60%;              /* Blue ring (was purple) */
+  --border: 249 50% 20%;
+  --input: 249 50% 20%;
+  --ring: 262 83% 58%;                 /* Purple ring */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -99,7 +107,7 @@
     animation-delay: 4s;
   }
   
-  /* Glassmorphism styles */
+  /* Glassmorphism styles - Purple Theme */
   .glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -114,13 +122,14 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
+  /* Purple glass effect */
   .glass-purple {
     background: linear-gradient(135deg, 
-      rgba(37, 99, 235, 0.1) 0%,      /* primary-blue 10% */
-      rgba(96, 165, 250, 0.05) 100%); /* electric-sky 5% */
+      rgba(139, 92, 246, 0.1) 0%,      /* primary-purple 10% */
+      rgba(167, 139, 250, 0.05) 100%); /* electric-violet 5% */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(96, 165, 250, 0.2);
+    border: 1px solid rgba(167, 139, 250, 0.2); /* electric-violet 20% */
   }
   
   .glass-hover {
@@ -129,9 +138,9 @@
   
   .glass-hover:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(96, 165, 250, 0.3);
+    border-color: rgba(167, 139, 250, 0.3); /* electric-violet 30% */
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2); /* primary-purple shadow */
   }
 }
 

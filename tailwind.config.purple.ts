@@ -1,5 +1,13 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * SaaS Magic Purple Theme - Tailwind Configuration Backup
+ * Created: 2024-12-22
+ * 
+ * This file preserves the original purple theme colors for SaaS Magic.
+ * To restore: Replace tailwind.config.ts with this file.
+ */
+
 const config: Config = {
   darkMode: ["class"],
   content: [
@@ -50,20 +58,14 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom SaaS Magic Blue Theme colors
-        "primary-blue": "#2563EB",        // Electric Blue (was primary-purple)
-        "deep-blue": "#1D4ED8",           // Deep Blue (was deep-purple)
-        "electric-sky": "#60A5FA",        // Sky Blue (was electric-violet)
-        "midnight-black": "#0F172A",      // Darker black
-        "dark-space": "#1E293B",          // Deep Slate
-        "cosmic-glow": "#EBF2FE",         // Light blue glow
-        "accent-indigo": "#4F46E5",       // Indigo accent (was accent-magenta)
-        
-        // Aliases for easy migration (maps old names to new colors)
-        "primary-purple": "#2563EB",      // Now blue
-        "deep-purple": "#1D4ED8",          // Now deep blue
-        "electric-violet": "#60A5FA",      // Now sky blue
-        "accent-magenta": "#4F46E5",       // Now indigo
+        // Custom SaaS Magic Purple Theme Colors
+        "primary-purple": "#8B5CF6",      // HSL: 262° 83% 58%
+        "deep-purple": "#6D28D9",          // HSL: 262° 68% 51%
+        "electric-violet": "#A78BFA",      // HSL: 258° 90% 77%
+        "midnight-black": "#0F0A1F",       // HSL: 252° 50% 8%
+        "dark-space": "#1A0F2E",           // HSL: 264° 48% 12%
+        "cosmic-glow": "#E0D5FF",          // HSL: 252° 100% 92%
+        "accent-magenta": "#D946EF",       // HSL: 293° 82% 60%
       },
       borderRadius: {
         lg: "var(--radius)",

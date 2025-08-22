@@ -25,7 +25,7 @@ export function HeroSection({
   return (
     <section className={`relative flex items-center overflow-hidden py-24 lg:py-32 ${className}`}>
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-space/50 via-midnight-black/30 to-deep-purple/20 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-space/50 via-midnight-black/30 to-deep-blue/20 -z-10" />
       
       {/* Content Container */}
       <div className="container mx-auto px-6 relative z-10">

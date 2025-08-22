@@ -45,7 +45,7 @@ export function Navigation() {
           <div className="hidden lg:flex items-center">
             <Button
               asChild
-              className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+              className="bg-gradient-to-r from-primary-purple to-deep-purple hover:from-deep-purple hover:to-primary-purple text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
             >
               <Link href="/get-started">Get Started</Link>
             </Button>
