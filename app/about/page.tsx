@@ -182,7 +182,7 @@ export default function About() {
       </section>
 
       {/* Prince2 Certification Section */}
-      <section className="py-20 bg-gradient-to-b from-dark-space to-midnight-black">
+      <section className="pt-12 pb-20 bg-gradient-to-b from-dark-space to-midnight-black">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -191,22 +191,22 @@ export default function About() {
             viewport={{ once: true }}
             className="max-w-5xl mx-auto"
           >
-            <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-electric-violet/30">
-              <div className="text-center mb-4">
+            <div className="bg-gradient-to-br from-primary-purple/10 to-electric-violet/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-electric-violet/30">
+              <div className="text-center">
                 <img 
                   src="/prince2-logo.svg" 
                   alt="Prince2 Certified" 
-                  className="w-full max-w-[400px] mx-auto brightness-150"
+                  className="w-full max-w-[300px] mx-auto brightness-200"
                 />
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6 mt-2">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white text-center">
                   Prince2 Certified Excellence
                 </h2>
                 <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto">
                   All our project managers are qualified Prince2 practitioners, bringing world-class project management methodology to every client engagement.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                     <div className="flex items-start">
                       <CheckCircle className="text-green-400 mr-3 mt-1 flex-shrink-0" size={20} />
                       <div>

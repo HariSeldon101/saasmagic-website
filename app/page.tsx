@@ -381,7 +381,7 @@ export default function Home() {
                 Fixed project phases with clear deliverables. Performance-based growth programs. No surprises, no scope creep, just results you can measure.
               </p>
               <div className="mt-4 flex items-center justify-center">
-                <img src="/prince2-logo.svg" alt="Prince2 Certified" className="h-8 brightness-150 mr-2" />
+                <img src="/prince2-logo.svg" alt="Prince2 Certified" className="h-8 brightness-200 mr-2" />
                 <span className="text-sm text-electric-violet">Prince2 Certified Project Management</span>
               </div>
             </motion.div>
