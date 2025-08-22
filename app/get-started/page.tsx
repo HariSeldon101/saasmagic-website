@@ -74,7 +74,7 @@ export default function GetStarted() {
         >
           <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
             <CheckCircle className="text-green-400 mx-auto mb-4" size={64} />
-            <h1 className="text-4xl font-bold text-white mb-4">Thank You!</h1>
+            <h1 className="text-3xl font-bold text-white mb-4">Thank You!</h1>
             <p className="text-xl text-gray-300 mb-6">
               We've received your information and will be in touch within 24 hours to schedule your 
               complimentary SaaS Strategy Assessment.

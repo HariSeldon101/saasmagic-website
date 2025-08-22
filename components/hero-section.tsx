@@ -39,7 +39,7 @@ export function HeroSection({
           className={centerContent ? "text-center max-w-5xl mx-auto" : "max-w-5xl mx-auto"}
         >
           {title && (
-            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-4">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
               {title}
             </h1>
           )}

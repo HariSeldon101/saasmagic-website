@@ -19,7 +19,7 @@ export default function Terms() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Terms of{" "}
               <span className="bg-gradient-to-r from-primary-purple to-electric-violet bg-clip-text text-transparent">
                 Service
