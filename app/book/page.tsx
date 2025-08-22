@@ -278,7 +278,7 @@ export default function BookPage() {
                 variant="outline"
                 className="border-white/20 text-white hover:bg-white/10"
               >
-                <a href="mailto:stupefy@saasmagic.ai">
+                <a href="mailto:stupefy@saasmagic.ai?subject=Please%20tell%20me%20more%20about%20SaaS%20Magic">
                   Email Us Directly
                 </a>
               </Button>

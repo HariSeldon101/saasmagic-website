@@ -43,7 +43,7 @@ export function Footer() {
               From Idea to Launch in 8 Weeks. One Agency. Complete Journey. Zero Friction.
             </p>
             <div className="text-gray-400 text-sm mb-6">
-              <a href="mailto:stupefy@saasmagic.ai" className="hover:text-electric-violet transition-colors">
+              <a href="mailto:stupefy@saasmagic.ai?subject=Please%20tell%20me%20more%20about%20SaaS%20Magic" className="hover:text-electric-violet transition-colors">
                 stupefy@saasmagic.ai
               </a>
             </div>

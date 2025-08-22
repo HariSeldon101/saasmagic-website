@@ -395,13 +395,13 @@ export default function GetStarted() {
                   </div>
 
                   <div>
-                    <label className="block text-white font-medium mb-2">Current Marketing Challenges *</label>
+                    <label className="block text-white font-medium mb-2">Your SaaS Idea or Current Challenge *</label>
                     <Textarea
                       value={formData.currentChallenges}
                       onChange={(e) => handleInputChange("currentChallenges", e.target.value)}
                       required
                       className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 min-h-[100px]"
-                      placeholder="What are your biggest marketing challenges right now?"
+                      placeholder="Describe your SaaS idea or what you're trying to build. What problem does it solve?"
                     />
                   </div>
 

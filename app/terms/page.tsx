@@ -397,7 +397,7 @@ export default function Terms() {
                 </h2>
                 <div className="space-y-2 text-gray-300">
                   <p>If you have questions about these Terms of Service:</p>
-                  <p><strong>Email:</strong> <a href="mailto:stupefy@saasmagic.ai" className="text-electric-violet hover:underline">stupefy@saasmagic.ai</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:stupefy@saasmagic.ai?subject=Please%20tell%20me%20more%20about%20SaaS%20Magic" className="text-electric-violet hover:underline">stupefy@saasmagic.ai</a></p>
                   <p><strong>Mail:</strong></p>
                   <div className="ml-4">
                     <p>SaaS Magic</p>
