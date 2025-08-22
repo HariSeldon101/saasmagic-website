@@ -7,10 +7,10 @@ export function Footer() {
 
   const footerLinks = {
     services: [
-      { label: "Strategy & Research", href: "/services#strategy" },
-      { label: "Product Development", href: "/services#development" },
-      { label: "Brand & Design", href: "/services#brand" },
-      { label: "Marketing & Growth", href: "/services#growth" },
+      { label: "Strategy & Research", href: "/todo" },
+      { label: "Product Development", href: "/todo" },
+      { label: "Brand & Design", href: "/todo" },
+      { label: "Marketing & Growth", href: "/todo" },
     ],
     resources: [
       { label: "SaaS Playbook", href: "/resources/playbook" },
