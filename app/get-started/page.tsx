@@ -125,7 +125,7 @@ export default function GetStarted() {
               What You'll Receive
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Your complimentary assessment includes a comprehensive analysis and strategic roadmap.
+              Your free SaaS roadmap session includes everything you need to understand how we can take you from idea to launch in 8 weeks or less.
             </p>
           </motion.div>
 
@@ -133,39 +133,39 @@ export default function GetStarted() {
             {[
               {
                 icon: <Brain className="text-electric-violet" size={32} />,
-                title: "AI Readiness Analysis",
-                description: "Comprehensive evaluation of your current marketing stack and AI implementation opportunities",
-                duration: "45-minute deep dive",
+                title: "Product-Market Fit Analysis",
+                description: "Deep dive into your SaaS idea, target market validation, and competitive positioning strategy",
+                duration: "Week 1-2 Discovery",
               },
               {
                 icon: <Target className="text-electric-violet" size={32} />,
-                title: "Custom Strategy Blueprint",
-                description: "Personalized roadmap showing exactly how AI can accelerate your specific business goals",
-                duration: "Tailored to your industry",
+                title: "8-Week Launch Roadmap",
+                description: "Your complete journey from concept to launch with fixed milestones and predictable costs",
+                duration: "One team, one timeline",
               },
               {
                 icon: <Rocket className="text-electric-violet" size={32} />,
-                title: "90-Day Quick Wins Plan",
-                description: "Immediate action items you can implement to see results in your first quarter",
-                duration: "Ready to execute",
+                title: "Technical Architecture Plan",
+                description: "Scalable tech stack design with AI-powered development to deliver 40% faster",
+                duration: "Built for growth",
               },
               {
                 icon: <BarChart3 className="text-electric-violet" size={32} />,
-                title: "ROI Projection Model",
-                description: "Data-driven projections showing expected returns from your SaaS implementation",
-                duration: "Conservative estimates",
+                title: "Go-to-Market Strategy",
+                description: "Launch campaign, growth hacking tactics, and performance tracking from day one",
+                duration: "Revenue-focused approach",
               },
               {
                 icon: <Users className="text-electric-violet" size={32} />,
-                title: "Competitive Intelligence",
-                description: "Analysis of how your competitors are using (or missing) SaaS opportunities",
-                duration: "Market positioning insights",
+                title: "Single Team Advantage",
+                description: "No more juggling agencies - one dedicated team for strategy, development, design, and launch",
+                duration: "Zero friction process",
               },
               {
                 icon: <Clock className="text-electric-violet" size={32} />,
-                title: "Priority Matrix",
-                description: "Clear prioritization of initiatives based on impact, effort, and your current resources",
-                duration: "Actionable next steps",
+                title: "Investment Breakdown",
+                description: "Transparent pricing with fixed phases, clear deliverables, and measurable ROI targets",
+                duration: "No surprises, no scope creep",
               },
             ].map((benefit, index) => (
               <motion.div
