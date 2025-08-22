@@ -263,17 +263,17 @@ export default function About() {
             {[
               {
                 icon: <Code2 className="text-electric-violet" size={32} />,
-                title: "🤖 AI-First, Human-Centered",
+                title: "AI-First, Human-Centered",
                 description: "We leverage the latest AI tools to accelerate every aspect of development and marketing, from code generation to content creation. But AI is our co-pilot, not our pilot. Human creativity, strategy, and quality control drive everything we do.",
               },
               {
                 icon: <Users className="text-electric-violet" size={32} />,
-                title: "🔄 Truly Integrated Teams",
+                title: "Truly Integrated Teams",
                 description: "Our developers attend marketing meetings. Our marketers understand the product roadmap. Our designers code. This isn't just collaboration – it's true integration that eliminates the gaps between disciplines.",
               },
               {
                 icon: <DollarSign className="text-electric-violet" size={32} />,
-                title: "📊 Data-Driven, Results-Obsessed",
+                title: "Data-Driven, Results-Obsessed",
                 description: "Every decision is backed by data. Every campaign is measured. Every line of code is tested. We're not satisfied until you're seeing real, measurable growth in users, revenue, and market position.",
               },
             ].map((approach, index) => (
