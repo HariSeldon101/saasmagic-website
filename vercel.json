@@ -1,6 +1,6 @@
 {
   "name": "saasmagic",
-  "alias": ["saasmagic.ai"],
+  "alias": ["saasmagic.ai", "www.saasmagic.ai"],
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
