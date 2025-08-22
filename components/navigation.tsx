@@ -37,23 +37,6 @@ export function Navigation() {
                 >
                   {item.label}
                 </Link>
-                
-                {/* Dropdown for Services */}
-                {item.subItems && (
-                  <div className="absolute top-full left-0 mt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-dark-space/95 backdrop-blur-xl rounded-lg shadow-2xl border border-white/10 p-2">
-                      {item.subItems.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          href={subItem.href}
-                          className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-md transition-colors"
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             ))}
           </div>
@@ -98,20 +81,6 @@ export function Navigation() {
                   >
                     {item.label}
                   </Link>
-                  {item.subItems && (
-                    <div className="ml-4 mt-2 space-y-2">
-                      {item.subItems.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          href={subItem.href}
-                          className="block text-sm text-gray-400 hover:text-white transition-colors"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
                 </div>
               ))}
               <div className="pt-4 pb-2">
